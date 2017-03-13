@@ -24,7 +24,7 @@ int time, sum;
     else if (time > 240 && time < 366)
         printf("Your income is equal: %.2f\n", sum*0.12);
     else 
-        printf("Enter the numbers of days \n");      
+        printf("Enter the numbers of days! \n");      
        
     return 0;
 }
