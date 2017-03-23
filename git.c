@@ -20,9 +20,9 @@ int time, sum;
     else if (time > 30 && time < 121)
         printf("Your income is equal: %.2f\n =)", sum*0.02);
     else if (time > 120 && time < 241)
-        printf("Your income is equal: %.2f\n =))", sum*0.06);
+        printf("Your income is equal: %.2f\n =)", sum*0.06);
     else if (time > 240 && time < 366)
-        printf("Your income is equal: %.2f\n =)))", sum*0.12);
+        printf("Your income is equal: %.2f\n =)", sum*0.12);
     else 
         printf("Enter the numbers of days! =) \n");      
        
