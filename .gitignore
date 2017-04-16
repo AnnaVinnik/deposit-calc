@@ -1,0 +1,3 @@
+bin/deposit-calc
+
+build/*.o
