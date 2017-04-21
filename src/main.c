@@ -3,6 +3,7 @@
 
 int main (){
 int time, sum;
+float k;
     printf("Enter the numbers of days (<366) : \n");
     scanf("%d", &time);
     
@@ -10,11 +11,16 @@ int time, sum;
         printf("Enter the sum \n");
         scanf("%d", &sum);
         
-            if (sum < 0)
+            if (sum <= 0)
             return 0;
     }
     else return 0;
        
-	print_income(time, sum);
+	k = print_income(time, sum);
+        if (k < 0)
+            printf ("Your income: %.2f  =( \n", k);
+        else if (k > 0)
+            printf ("Your income: %.2f  =) \n", k);
+        else printf ("Enter sum and date (< 366) \n");
     return 0;
 }
