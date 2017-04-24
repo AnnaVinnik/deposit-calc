@@ -8,7 +8,7 @@ main.o:
 deposit.o:
 	gcc -Wall -Werror -o build/deposit.o -c src/deposit.c
 
-
+.PHONY:clean
 clean:
 	rm -rf build/*
 
