@@ -1,2 +1,2 @@
 # deposit-calc
-![alt text](https://travis-ci.org/AnnaVinnik/deposit-calc.svg?branch=experiment)
+[![Build Status](https://travis-ci.org/AnnaVinnik/deposit-calc.svg?branch=experiment)](https://travis-ci.org/AnnaVinnik/deposit-calc)
