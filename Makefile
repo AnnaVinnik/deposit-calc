@@ -9,9 +9,9 @@ build/src/deposit.o:src/deposit.c
 
 
 bin/deposit-calc-test:build/test/deposit_test.o build/test/main.o
-	gcc -I src build/test/deposit_test.o build/test/main.o -o bin/deposit-calc_test
+	gcc -I thirdparty -I src build/test/deposit_test.o build/src/deposit.o build/test/main.o -o bin/deposit-calc-test
 
 build/test/deposit_test.o:test/deposit_test.c
-	gcc -I thirdparty src -c test/deposit_test.c -o build/test/deposit_test.o
+	gcc -I thirdparty -I src -c test/deposit_test.c -o build/test/deposit_test.o
 build/test/main.o:test/main.c
 	gcc -I thirdparty -c test/main.c -o build/test/main.o

@@ -11,7 +11,7 @@ float k;
         printf("Enter the sum \n");
         scanf("%d", &sum);
         
-            if (sum <= 0)
+            if (sum <= 1000)
             return 0;
     }
     else return 0;
