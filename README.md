@@ -1,2 +1,2 @@
 Deposit-calc
-[https://travis-ci.org/AnnaVinnik/deposit-calc.svg?branch=master]
+[![Build Status](https://travis-ci.org/AnnaVinnik/deposit-calc.svg?branch=development)](https://travis-ci.org/AnnaVinnik/deposit-calc)
