@@ -1,14 +1,24 @@
+deposit-calc:build/src/main.o build/src/deposit.o
+	gcc build/src/main.o build/src/deposit.o -o bin/deposit-calc
 
-deposit-calc:main.o deposit.o
-	gcc -Wall -Werror -o bin/deposit-calc build/main.o build/deposit.o
+build/src/main.o:src/main.c
+	gcc -Wall -Werror -o build/src/main.o -c src/main.c 
 
-main.o:
-	gcc -Wall -Werror -o build/main.o -c src/main.c
+build/src/deposit.o:src/deposit.c
+	gcc -Wall -Werror -o build/src/deposit.o -c src/deposit.c
 
-deposit.o:
-	gcc -Wall -Werror -o build/deposit.o -c src/deposit.c
+
 
 .PHONY:clean
 clean:
 	rm -rf build/*
+
+
+bin/deposit-calc-test:build/test/deposit_test.o build/test/main.o
+	gcc build/test/deposit_test.o build/test/main.o -o bin/deposit-calc_test
+
+build/test/deposit_test.o:test/deposit_test.c
+	gcc -I thirdparty src -c test/deposit_test.c -o build/test/deposit_test.c
+build/test/main.o:test/main.c
+	gcc -I thirdparty -c test/main.c -o build/test/main.o
 
