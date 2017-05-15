@@ -18,7 +18,7 @@ float k;
        
 	k = print_income(time, sum);
         if (k < 0)
-            printf ("Your income: %.2f  :) \n", k);
+            printf ("Your income: %.2f  =) \n", k);
         else if (k > 0)
             printf ("Your income: %.2f  :) \n", k);
         else printf ("Enter sum and date (< 366) \n");
